@@ -10,6 +10,9 @@ an initial request through a finished deliverable.
 
 ## Install
 
+Marketplace installation becomes available after Cursor approves and indexes
+this repository. The Grok Build marketplace listing is a separate submission.
+
 ### Grok Bot
 
 1. Open **Marketplace** in Grok Bot.
@@ -50,6 +53,9 @@ The plugin connects to Enrich Labs' hosted, Streamable HTTP MCP server:
 Authentication uses OAuth with PKCE. No Enrich Labs password, API key, or
 access token is stored in this repository. The authorization screen shows the
 brand being connected before access is granted.
+
+`https://enrichlabs.ai/mcp` is a reverse proxy to the canonical endpoint
+`https://agent.enrichlabs.ai/api/mcp`; both reach the same service and OAuth flow.
 
 Helena runs longer agent tasks asynchronously. A client starts a turn, checks
 its progress, and receives the final response and any generated assets when
